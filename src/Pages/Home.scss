@@ -1,0 +1,49 @@
+.Toolbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s all;
+    // gap: 12px;
+}
+.WrapperInputDate {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    top: -310%;
+}
+.Search {
+
+    .spanSearch {
+        cursor: pointer;
+    }
+}
+.spanSearchX {
+    display: flex;
+    align-items: center;
+    .icon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}
+.open {
+    padding: 20px;
+    top: 100%;
+    background-image: linear-gradient(rgb(171, 167, 167), rgb(134, 132, 132), rgb(138, 126, 126), rgb(93, 85, 85));
+    opacity: 1;
+    z-index: 1;
+    border-radius: 4px;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .Search {
+        max-width: 150px;
+    }
+}
